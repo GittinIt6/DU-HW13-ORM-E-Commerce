@@ -7,7 +7,7 @@ This is a node.js script using **express** relying on NPM package **sequelize** 
 
 Github Repository Address: <https://github.com/GittinIt6/DU-HW13-ORM-E-Commerce>
 
-See walkthrough/demonstration video at <https://youtu.be/l9fSH9553IE>
+See walkthrough/demonstration video at <https://youtu.be/BJXoi1F7H88>
 
 ## Purpose
 
@@ -32,6 +32,25 @@ The intended audience is an individual that would like to manage a company emplo
 
 &#x2611; **Technical Knowledge:**
 The user of this site does need to have a technical background, and *should* understand node.js and MYSQL capabilities.
+
+## API
+| Path                        | Method | Action                   | Requires               |
+|-----------------------------|--------|--------------------------|------------------------|
+| /api/tags                   | GET    | return all tag data      |                        |
+| /api/tags/:id               | GET    | return 1 tag             | :id                    |
+| /api/tags                   | POST   | create new tag           | "tag_name":string      |
+| /api/tags/:id/:string       | PUT    | update tag               | :id, :name             |
+| /api/tags/:id               | DEL    | delete a tag             | :id                    |
+| /api/categories             | GET    | return all category data |                        |
+| /api/categories/:id         | GET    | return 1 category        | :id                    |
+| /api/categories             | POST   | create new category      | "category_name":string |
+| /api/categories/:id/:string | PUT    | update category          | :id, :name             |
+| /api/categories/:id         | DEL    | delete a product         | :id                    |
+| /api/products               | GET    | return all product data  |                        |
+| /api/products/:id           | GET    | return 1 product         | :id                    |
+| /api/products               | POST   | create new product       | "product_name":string  |
+| /api/products/:id/:string   | PUT    | update product           | :id, :name             |
+| /api/products/:id           | DEL    | delete a product         | :id                    |
 
 ## Technical Detail
 
